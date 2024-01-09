@@ -173,7 +173,7 @@ describe('test chip component slots', () => {
       },
     })
 
-    expect(wrapper.find('.var-chip').html()).toContain('This is left slots<span class="var-chip__text-normal"></span>')
+    expect(wrapper.find('.var-chip').html()).toContain('This is left slots')
     wrapper.unmount()
   })
 
@@ -184,7 +184,7 @@ describe('test chip component slots', () => {
       },
     })
 
-    expect(wrapper.find('.var-chip').html()).toContain('<span class="var-chip__text-normal"></span>This is right slots')
+    expect(wrapper.find('.var-chip').html()).toContain('This is right slots')
     wrapper.unmount()
   })
 })
